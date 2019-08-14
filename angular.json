@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shoe-closet-v2": {
+    "sneaker-tree": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shoe-closet-v2",
+            "outputPath": "dist/sneaker-tree",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -62,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shoe-closet-v2:build"
+            "browserTarget": "sneaker-tree:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shoe-closet-v2:build:production"
+              "browserTarget": "sneaker-tree:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shoe-closet-v2:build"
+            "browserTarget": "sneaker-tree:build"
           }
         },
         "test": {
@@ -88,6 +89,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -110,15 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shoe-closet-v2:serve"
+            "devServerTarget": "sneaker-tree:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shoe-closet-v2:serve:production"
+              "devServerTarget": "sneaker-tree:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "shoe-closet-v2"
+    }
+  },
+  "defaultProject": "sneaker-tree"
 }
