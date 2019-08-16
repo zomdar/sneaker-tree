@@ -1,47 +1,33 @@
 /** Example file/folder data. */
 export const files = [
   {
-    name: 'components',
+    name: 'strains',
     type: 'folder',
     children: [
       {
-        name: 'src',
+        name: 'hybrid',
         type: 'folder',
         children: [
-          {
-            name: 'cdk',
-            type: 'folder',
-            children: [
-              { name: 'package.json', type: 'file' },
-              { name: 'BUILD.bazel', type: 'file' },
+              { name: 'purple kush', type: 'file' },
+              { name: 'silver haze', type: 'file' },
             ]
-          },
-          { name: 'material', type: 'folder' }
-        ]
-      }
-    ]
-  },
-  {
-    name: 'angular',
-    type: 'folder',
-    children: [
-      {
-        name: 'packages',
-        type: 'folder',
-        children: [
-          { name: '.travis.yml', type: 'file' },
-          { name: 'firebase.json', type: 'file' }
-        ]
-      },
-      { name: 'package.json', type: 'file' }
-    ]
-  },
-  {
-    name: 'angularjs',
-    type: 'folder',
-    children: [
-      { name: 'gulpfile.js', type: 'file' },
-      { name: 'README.md', type: 'file' }
+        },
+        {
+          name: 'sativa',
+          type: 'folder',
+          children: [
+                { name: 'girl scout cookies', type: 'file' },
+                { name: 'northern lights', type: 'file' },
+              ]
+        },
+        {
+          name: 'indica',
+          type: 'folder',
+          children: [
+                { name: 'afgan kush', type: 'file' },
+                { name: 'silver haze', type: 'file' },
+              ]
+        }
     ]
   }
 ];
